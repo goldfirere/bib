@@ -84,6 +84,16 @@
   Publisher                = {ACM}
 }
 
+@Article{barendregt-lambda-cube,
+  Title                    = {Introduction to generalized type systems},
+  Author                   = {Barendregt, Henk},
+  Journal                  = {J. Funct. Program.},
+  Year                     = {1991},
+  Number                   = {2},
+  Pages                    = {125--154},
+  Volume                   = {1}
+}
+
 @InProceedings{bernardy-dependent-types,
   Title                    = {Parametricity and dependent types},
   Author                   = {Bernardy, Jean-Philippe and Jansson, Patrik and Paterson, Ross},
@@ -146,6 +156,17 @@
   Editor                   = {Berardi, Stefano and Coppo, Mario and Damiani, Ferruccio},
   Series                   = {Lecture Notes in Computer Science},
   Volume                   = {3085}
+}
+
+@Article{safe-coercions-jfp,
+  Title                    = {Safe Zero-cost Coercions for {H}askell},
+  Author                   = {Breitner, Joachim and Eisenberg, Richard A. and Peyton Jones, Simon and Weirich, Stephanie},
+  Journal                  = {J. Funct. Program.},
+  Year                     = {2016},
+  Note                     = {To appear},
+
+  Owner                    = {rae},
+  Timestamp                = {2016.06.27}
 }
 
 @InProceedings{safe-coercions,
@@ -374,6 +395,20 @@
   Url                      = {http://coq.inria.fr}
 }
 
+@Article{coquand-cc,
+  Title                    = {The calculus of constructions},
+  Author                   = {Thierry Coquand and G\'erard Huet},
+  Journal                  = {Information and Computation},
+  Year                     = {1988},
+  Number                   = {2},
+  Pages                    = {95 - 120},
+  Volume                   = {76},
+
+  Doi                      = {http://dx.doi.org/10.1016/0890-5401(88)90005-3},
+  ISSN                     = {0890-5401},
+  Url                      = {http://www.sciencedirect.com/science/article/pii/0890540188900053}
+}
+
 @InProceedings{weirich:popcron,
   Title                    = {Resource bound certification},
   Author                   = {Crary, Karl and Weirich, Stephnie},
@@ -463,6 +498,26 @@
   Series                   = {PLDI '12}
 }
 
+@InProceedings{van-doorn-explicit-convertibility-proofs,
+  Title                    = {Explicit Convertibility Proofs in Pure Type Systems},
+  Author                   = {van Doorn, Floris and Geuvers, Herman and Wiedijk, Freek},
+  Booktitle                = {Proceedings of the Eighth ACM SIGPLAN International Workshop on Logical Frameworks and Meta-languages: Theory and Practice},
+  Year                     = {2013},
+
+  Address                  = {New York, NY, USA},
+  Pages                    = {25--36},
+  Publisher                = {ACM},
+  Series                   = {LFMTP '13},
+
+  Acmid                    = {2503890},
+  Doi                      = {10.1145/2503887.2503890},
+  ISBN                     = {978-1-4503-2382-6},
+  Keywords                 = {conversion rule, convertibility proofs, coq, formalisation, pure type systems, type theory},
+  Location                 = {Boston, Massachusetts, USA},
+  Numpages                 = {12},
+  Url                      = {http://doi.acm.org/10.1145/2503887.2503890}
+}
+
 @InProceedings{type-schemes-modules,
   Title                    = {Principal Type Schemes for Modular Programs},
   Author                   = {Dreyer, Derek and Blume, Matthias},
@@ -527,14 +582,28 @@
   Url                      = {http://doi.acm.org/10.1145/964001.964025}
 }
 
-@Unpublished{equalities,
-  Title                    = {An Overabundance of Equality: Implementing Kind Equalities into Haskell},
+@TechReport{ghc-core-spec,
+  Title                    = {System {FC}, as implemented in {GHC}},
   Author                   = {Eisenberg, Richard A.},
-  Note                     = {Draft},
+  Institution              = {University of Pennsylvania},
   Year                     = {2015},
+  Number                   = {MS-CIS-15-09},
 
   Owner                    = {rae},
-  Timestamp                = {2015.05.27}
+  Timestamp                = {2016.06.28},
+  Url                      = {https://github.com/ghc/ghc/blob/master/docs/core-spec/core-spec.pdf}
+}
+
+@TechReport{overabundance-of-equalities,
+  Title                    = {An Overabundance of Equality: Implementing Kind Equalities into Haskell},
+  Author                   = {Eisenberg, Richard A.},
+  Institution              = {University of Pennsylvania},
+  Year                     = {2015},
+  Number                   = {MS-CIS-15-10},
+
+  Owner                    = {rae},
+  Timestamp                = {2015.05.27},
+  Url                      = {http://www.cis.upenn.edu/~eir/papers/2015/equalities/equalities.pdf}
 }
 
 @InProceedings{promoting-functions-to-type-families,
@@ -878,6 +947,21 @@ de l'arithm\'etique d'ordre sup\'erieur},
   Timestamp                = {2015.05.08}
 }
 
+@InProceedings{hofmann-streicher,
+  Title                    = {The groupoid interpretation of type theory},
+  Author                   = {Hofmann, Martin and Streicher, Thomas},
+  Booktitle                = {Twenty-Five Years of Constructive Type Theory},
+  Year                     = {1995},
+
+  Address                  = {Venice, Italy},
+  Editor                   = {Sambin, Giovanni and Smith, Jan M.},
+  Publisher                = {Oxford University Press},
+  Series                   = {Oxford Logic Guides},
+
+  Owner                    = {rae},
+  Timestamp                = {2016.06.28}
+}
+
 @InProceedings{history-of-haskell,
   Title                    = {A History of Haskell: Being Lazy with Class},
   Author                   = {Hudak, Paul and Hughes, John and Peyton Jones, Simon and Wadler, Philip},
@@ -912,6 +996,23 @@ de l'arithm\'etique d'ordre sup\'erieur},
   Owner                    = {rae},
   Timestamp                = {2016.06.16},
   Url                      = {https://lists.chalmers.se/pipermail/agda/2010/001526.html}
+}
+
+@InBook{simplification-girard-paradox,
+  Title                    = {A simplification of {Girard's} paradox},
+  Author                   = {Hurkens, Antonius J. C.},
+  Editor                   = {Dezani-Ciancaglini, Mariangiola
+and Plotkin, Gordon},
+  Pages                    = {266--278},
+  Publisher                = {Springer Berlin Heidelberg},
+  Year                     = {1995},
+
+  Address                  = {Berlin, Heidelberg},
+
+  Booktitle                = {Typed Lambda Calculi and Applications: Second International Conference on Typed Lambda Calculi and Applications, TLCA '95 Edinburgh, United Kingdom, April 10--12, 1995 Proceedings},
+  Doi                      = {10.1007/BFb0014058},
+  ISBN                     = {978-3-540-49178-1},
+  Url                      = {http://dx.doi.org/10.1007/BFb0014058}
 }
 
 @InProceedings{lambda-lifting,
@@ -960,14 +1061,25 @@ de l'arithm\'etique d'ordre sup\'erieur},
   Timestamp                = {2015.05.08}
 }
 
-@Unpublished{kahrs,
-  Title                    = {Non-$\omega$-overlapping {TRSs} have unique normal forms},
-  Author                   = {Kahrs, Stefan and Smith, Connor},
-  Note                     = {Draft, submitted for publication},
-  Year                     = {2015},
+@InProceedings{kahrs-trss-are-un,
+  Title                    = {{Non-Omega-Overlapping TRSs are UN}},
+  Author                   = {Stefan Kahrs and Connor Smith},
+  Booktitle                = {1st International Conference on Formal Structures for Computation and Deduction (FSCD 2016)},
+  Year                     = {2016},
 
-  Owner                    = {rae},
-  Timestamp                = {2015.05.07}
+  Address                  = {Dagstuhl, Germany},
+  Editor                   = {Delia Kesner and Brigitte Pientka},
+  Pages                    = {22:1--22:17},
+  Publisher                = {Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik},
+  Series                   = {Leibniz International Proceedings in Informatics (LIPIcs)},
+  Volume                   = {52},
+
+  Annote                   = {Keywords: consistency, omega-substitutions, uniqueness of normal forms},
+  Doi                      = {http://dx.doi.org/10.4230/LIPIcs.FSCD.2016.22},
+  ISBN                     = {978-3-95977-010-1},
+  ISSN                     = {1868-8969},
+  Url                      = {http://drops.dagstuhl.de/opus/volltexte/2016/5996},
+  Urn                      = {urn:nbn:de:0030-drops-59968}
 }
 
 @InProceedings{gadts-meet-their-match,
@@ -1191,6 +1303,17 @@ de l'arithm\'etique d'ordre sup\'erieur},
   Timestamp                = {2015.05.08}
 }
 
+@PhdThesis{mcbride-thesis,
+  Title                    = {Dependently Typed Functional Programs and their Proofs},
+  Author                   = {McBride, Conor},
+  School                   = {University of Edinburgh},
+  Year                     = {1999},
+
+  Owner                    = {rae},
+  Timestamp                = {2016.06.28},
+  Url                      = {http://strictlypositive.org/thesis.pdf}
+}
+
 @InCollection{higher-rank,
   Title                    = {The typechecking of programs with implicit type structure},
   Author                   = {McCracken, Nancy},
@@ -1233,6 +1356,17 @@ de l'arithm\'etique d'ordre sup\'erieur},
   Pages                    = {344-359},
   Series                   = {Lecture Notes in Computer Science},
   Volume                   = {2044}
+}
+
+@InProceedings{erasure-pure-type-systems,
+  Title                    = {Erasure and Polymorphism in Pure Type Systems},
+  Author                   = {Mishra-Linger, Nathan and Sheard, Tim},
+  Booktitle                = {Foundations of Software Science and Computational Structures (FoSSaCS)},
+  Year                     = {2008},
+  Publisher                = {Springer},
+
+  Owner                    = {rae},
+  Timestamp                = {2016.06.28}
 }
 
 @InProceedings{singletons-everywhere,
@@ -1406,6 +1540,19 @@ de l'arithm\'etique d'ordre sup\'erieur},
   Location                 = {Portland, Oregon, USA},
   Owner                    = {rae},
   Timestamp                = {2015.05.07}
+}
+
+@InCollection{typerep,
+  Title                    = {A reflection on types},
+  Author                   = {Peyton Jones, Simon and Weirich, Stephanie and Eisenberg, Richard A. and Vytiniotis, Dimitrios},
+  Booktitle                = {A list of successes that can change the world},
+  Publisher                = {Springer},
+  Year                     = {2016},
+  Note                     = {A festschrift in honor of Phil Wadler},
+  Series                   = {LNCS},
+
+  Owner                    = {rae},
+  Timestamp                = {2016.06.28}
 }
 
 @Unpublished{static-semantics-for-haskell,
@@ -1667,6 +1814,15 @@ de l'arithm\'etique d'ordre sup\'erieur},
   Publisher                = {IEEE Computer Society}
 }
 
+@Book{hott,
+  Title                    = {Homotopy Type Theory: Univalent Foundations of Mathematics},
+  Author                   = {The {Univalent Foundations Program}},
+  Publisher                = {\url{https://homotopytypetheory.org/book}},
+  Year                     = {2013},
+
+  Address                  = {Institute for Advanced Study}
+}
+
 @InProceedings{liquid-haskell,
   Title                    = {Refinement Types for {H}askell},
   Author                   = {Vazou, Niki and Seidel, Eric L. and Jhala, Ranjit and Vytiniotis, Dimitrios and Peyton Jones, Simon},
@@ -1771,17 +1927,6 @@ de l'arithm\'etique d'ordre sup\'erieur},
   Publisher                = {ACM}
 }
 
-@Misc{weirich-paradoxical-typecase,
-  Title                    = {Paradoxical Typecase},
-
-  Author                   = {Stephanie Weirich},
-  HowPublished             = {Presentation to WG2.8.},
-
-  Owner                    = {rae},
-  Timestamp                = {2016.06.16},
-  Url                      = {http://www.cis.upenn.edu/~sweirich/talks/wg28-paradoxes.pdf}
-}
-
 @Misc{weirich-icfp-keynote,
   Title                    = {Depending on Types},
 
@@ -1791,6 +1936,19 @@ de l'arithm\'etique d'ordre sup\'erieur},
 
   Owner                    = {rae},
   Timestamp                = {2015.06.28}
+}
+
+@Misc{weirich-paradoxical-typecase,
+  Title                    = {Paradoxical Typecase},
+
+  Author                   = {Stephanie Weirich},
+  HowPublished             = {Presentation to WG2.8.},
+  Month                    = {November},
+  Year                     = {2012},
+
+  Owner                    = {rae},
+  Timestamp                = {2016.06.16},
+  Url                      = {http://www.cis.upenn.edu/~sweirich/talks/wg28-paradoxes.pdf}
 }
 
 @Article{weirich-cast,
