@@ -3,8 +3,7 @@
 
 @InProceedings{type-classes,
   Title                    = {How to Make ad-hoc Polymorphism Less ad-hoc},
-  Author                   = {Philip Wadler and
- Stephen Blott},
+  Author                   = {Philip Wadler and Stephen Blott},
   Booktitle                = {POPL},
   Year                     = {1989},
   Pages                    = {60-76},
@@ -31,6 +30,19 @@
   Ee                       = {http://doi.acm.org/10.1145/1926385.1926411},
   Owner                    = {rae},
   Timestamp                = {2015.05.07}
+}
+
+@inproceedings{pj-meijer:heaven-and-hell,
+  topic = "ffi",
+  author = "S Finne and D Leijen and E Meijer and SL {Peyton~Jones}",
+  title = "Calling {Hell} from {Heaven} and {Heaven} from {Hell}",
+  booktitle = 	 "{ACM SIGPLAN International Conference on Functional Programming (ICFP'99)}",
+  address = 	 "Paris",
+  publisher = "ACM",
+  year = 	 1999,
+  month = 	 sep,
+  pages = "114-125",
+  keywords = "phantom types"
 }
 
 @InBook{augustsson-compiling-pattern-matching,
@@ -504,6 +516,15 @@
   Series                   = {OOPSLA '13}
 }
 
+@InProceedings{automating-transformations-scala,
+  Title                    = {Automating Ad hoc Data Representation Transformations},
+  Author                   = {Ureche, Vlad and Biboudis, Aggelos and Smaragdakis, Yannis and Odersky, Martin},
+  Booktitle                = {International Conference on Object Oriented Programming Systems Languages \& Applications},
+  Year                     = {2015},
+  Publisher                = {ACM},
+  Series                   = {OOPSLA '15}
+}
+
 @InProceedings{abductive-error-diagnosis,
   Title                    = {Automated Error Diagnosis Using Abductive Inference},
   Author                   = {Dillig, Isil and Dillig, Thomas and Aiken, Alex},
@@ -818,10 +839,6 @@
   Pages                    = {63 - 92},
   Series                   = {Studies in Logic and the Foundations of Mathematics },
   Volume                   = {63},
-
-  Doi                      = {http://dx.doi.org/10.1016/S0049-237X(08)70843-7},
-  ISSN                     = {0049-237X},
-  Url                      = {http://www.sciencedirect.com/science/article/pii/S0049237X08708437}
 }
 
 @PhdThesis{girard-thesis,
@@ -1107,6 +1124,15 @@ and Plotkin, Gordon},
   Series                   = {ICFP '15},
 
   Location                 = {Vancouver, British Columbia, Canada}
+}
+
+@inproceedings{kennedy-generics,
+  author = {Andrew Kennedy and Don Syme},
+  title = {Design and Implementation of Generics for the {.NET} {Common Language Runtime}},
+  booktitle = {Programming Language Design and Implementation},
+  year = {2001},
+  month = {January},
+  publisher = {ACM}
 }
 
 @PhdThesis{kennedy-thesis,
@@ -1665,11 +1691,6 @@ and Plotkin, Gordon},
   Pages                    = {408-425},
   Series                   = {Lecture Notes in Computer Science},
   Volume                   = {19},
-
-  Doi                      = {10.1007/3-540-06859-7_148},
-  ISBN                     = {978-3-540-06859-4},
-  Language                 = {English},
-  Url                      = {http://dx.doi.org/10.1007/3-540-06859-7_148}
 }
 
 @Article{russell-universes,
@@ -2445,6 +2466,61 @@ and Plotkin, Gordon},
   year   = {1998},
 }
 
+@inproceedings{anf,
+ author = {Flanagan, Cormac and Sabry, Amr and Duba, Bruce F. and Felleisen, Matthias},
+ title = {The Essence of Compiling with Continuations},
+ booktitle = {Proceedings of the ACM SIGPLAN 1993 Conference on Programming Language Design and Implementation},
+ series = {PLDI '93},
+ year = {1993},
+ location = {Albuquerque, New Mexico, USA},
+ pages = {237--247},
+ numpages = {11},
+ publisher = {ACM},
+} 
+
+
+@article{grossman-cyclone,
+ author = {Grossman, Dan},
+ title = {Quantified Types in an Imperative Language},
+ journal = {ACM Trans. Program. Lang. Syst.},
+ issue_date = {May 2006},
+ volume = {28},
+ number = {3},
+ month = may,
+ year = {2006},
+ pages = {429--475},
+ publisher = {ACM},
+} 
+
+@InProceedings{cyclone,
+  author    = {Trevor Jim and Greg Morrisett and Dan Grossman and Michael Hicks and James Cheney and Yanling Wang},
+  title     = {Cyclone: A safe dialect of {C}},
+  booktitle = {Proceedings of the {USENIX} Annual Technical Conference},
+  year      = {2002},
+  pages     = {275-288},
+}
+
+@PhdThesis{eisenberg-thesis,
+  author = {Richard A. Eisenberg},
+  title  = {Dependent Types in Haskell: Theory and Practice},
+  school = {University of Pennsylvania},
+  year   = {2016},
+}
+
+@Book{java-generics,
+  title     = {Java Generics and Collections: Speed Up the Java Development Process},
+  publisher = {O'Reilly Media},
+  year      = {2006},
+  author    = {Maurice Naftalin and Philip Wadler},
+}
+
+@Book{real-world-ocaml,
+  title     = {Real World OCaml},
+  publisher = {O'Reilly Media},
+  year      = {2013},
+  author    = {Yaron Minsky and Anil Madhavapeddy and Jason Hickey},
+}
+
 @InProceedings{lookup-update-infir,
   author    = {Diehl, Larry and Sheard, Tim},
   title     = {Generic Lookup and Update for Infinitary Inductive-recursive Types},
@@ -2463,12 +2539,30 @@ and Plotkin, Gordon},
   note        = {Research report 10},
 }
 
-@Unpublished{levity-polymorphism,
-  author = {Richard A. Eisenberg and Simon {Peyton Jones}},
-  title  = {Levity Polymorphism},
-  note   = {Draft},
-  year   = {2016},
-  url    = {http://cs.brynmawr.edu/~rae/papers/2017/levity/levity.pdf},
+@InProceedings{levity-polymorphism,
+  author    = {Eisenberg, Richard A. and Peyton Jones, Simon},
+  title     = {Levity Polymorphism},
+  booktitle = {Proceedings of the 38th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+  year      = {2017},
+  series    = {PLDI 2017},
+  pages     = {525--539},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  acmid     = {3062357},
+  doi       = {10.1145/3062341.3062357},
+  isbn      = {978-1-4503-4988-8},
+  keywords  = {compilation, polymorphism, unboxed types},
+  location  = {Barcelona, Spain},
+  numpages  = {15},
+  url       = {http://doi.acm.org/10.1145/3062341.3062357},
+}
+
+@TechReport{levity-polymorphism-extended,
+  author      = {Eisenberg, Richard A. and Peyton Jones, Simon},
+  title       = {Levity Polymorphism (extended version)},
+  institution = {Bryn Mawr College},
+  year        = {2017},
+  url         = {http://cs.brynmawr.edu/~rae/papers/2017/levity/levity-extended.pdf}
 }
 
 @Article{constraint-based-gadt,
@@ -2481,6 +2575,355 @@ and Plotkin, Gordon},
   month      = jan,
   issue_date = {January 2007},
   publisher  = {ACM},
+}
+
+@inproceedings{ghc-transforming-optimizer,
+author = {Peyton Jones, Simon and Santos, Andr\'e},
+title = {A transformation-based optimiser for {Haskell}},
+year = {1997},
+month = {October},
+abstract = {
+
+
+Many compilers do some of their work by means of correctness-preserving, and hopefully performance-improving, program transformations. The Glasgow Haskell Compiler (GHC) takes this idea of "compilation by transformation" as its war-cry, trying to express as much as possible of the compilation process in the form of program transformations.
+
+This paper reports on our practical experience of the transformational approach to compilation, in the context of a substantial compiler.
+
+
+
+
+
+},
+publisher = {Elsevier},
+address = {},
+pages = {3-47},
+booktitle = {Science of Computer Programming},
+volume = {32},
+chapter = {},
+isbn = {},
+}
+
+@Misc{mlton,
+  author       = {Weeks, Stephen},
+  title        = {Whole-Program Compilation in {MLton}},
+  howpublished = {Invited talk at ML Workshop},
+  month        = sep,
+  year         = {2006},
+}
+
+@InProceedings{til,
+  author    = {Tarditi, David and Morrisett, Greg and Cheng, Perry and Stone, Chris and Harper, Robert and Lee, Peter},
+  title     = {{TIL}: A Type-Directed Optimizing Compiler for {ML}},
+  booktitle = {Proceedings of the ACM SIGPLAN '96 Conference on Programming Language Design and Implementation},
+  year      = {1996},
+  series    = {PLDI '96},
+  location  = {Philadelphia, PA, USA},
+}
+
+@InProceedings{lx,
+  author    = {Crary, Karl and Weirich, Stephanie},
+  title     = {Flexible Type Analysis},
+  booktitle = {Proceedings of the Fourth ACM SIGPLAN International Conference on Functional Programming},
+  year      = {1999},
+  series    = {ICFP '99},
+  pages     = {233--248},
+  publisher = {ACM},
+  acmid     = {317906},
+  location  = {Paris, France},
+  numpages  = {16},
+}
+
+@Article{tal,
+  author     = {Morrisett, Greg and Walker, David and Crary, Karl and Glew, Neal},
+  title      = {From {System F} to Typed Assembly Language},
+  journal    = {ACM Trans. Program. Lang. Syst.},
+  year       = {1999},
+  volume     = {21},
+  number     = {3},
+  pages      = {527--568},
+  month      = may,
+  issue_date = {May 1999},
+  keywords   = {certified code, closure conversion, secure extensible systems, type-directed compilation, typed assembly language, typed intermediate languages},
+  numpages   = {42},
+  publisher  = {ACM},
+}
+
+@InProceedings{talt,
+  author    = {Crary, Karl},
+  title     = {Toward a Foundational Typed Assembly Language},
+  booktitle = {Proceedings of the 30th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+  year      = {2003},
+  series    = {POPL '03},
+  pages     = {198--212},
+  publisher = {ACM},
+  keywords  = {proof-carrying code, typed assembly language},
+  location  = {New Orleans, Louisiana, USA},
+  numpages  = {15},
+}
+
+@InProceedings{evaluation-order-polymorphism,
+  author    = {Dunfield, Joshua},
+  title     = {Elaborating Evaluation-order Polymorphism},
+  booktitle = {Proceedings of the 20th ACM SIGPLAN International Conference on Functional Programming},
+  year      = {2015},
+  series    = {ICFP 2015},
+  pages     = {256--268},
+  publisher = {ACM},
+  keywords  = {evaluation order, intersection types, polymorphism},
+  location  = {Vancouver, BC, Canada},
+  numpages  = {13},
+}
+
+@Article{pitts-nominal-logic,
+  author   = {Andrew M. Pitts},
+  title    = {Nominal logic, a first order theory of names and binding},
+  journal  = {Information and Computation},
+  year     = {2003},
+  volume   = {186},
+  number   = {2},
+  pages    = {165 - 193},
+  issn     = {0890-5401},
+  note     = {Theoretical Aspects of Computer Software (TACS 2001)},
+  doi      = {https://doi.org/10.1016/S0890-5401(03)00138-X},
+  keywords = {Abstract syntax, Variable binding, Permutation, Fresh names},
+  url      = {http://www.sciencedirect.com/science/article/pii/S089054010300138X},
+}
+
+@InProceedings{gordon-locally-nameless,
+  author    = {Gordon, Andrew D.},
+  title     = {A mechanisation of name-carrying syntax up to alpha-conversion},
+  booktitle = {Higher Order Logic Theorem Proving and Its Applications},
+  year      = {1994},
+  editor    = {Joyce, Jeffrey J. and Seger, Carl-Johan H.},
+  pages     = {413--425},
+  address   = {Berlin, Heidelberg},
+  publisher = {Springer Berlin Heidelberg},
+  abstract  = {We present a new strategy for representing syntax in a, mechanised logic. We define an underlying type of de Bruijn terms, define an operation of named lambda-abstraction, and hence inductively define a set of conventional name-carrying terms. The result is a mechanisation of the practice of most authors studying formal calculi: to work with conventional name-carrying notation and substitution, but to identify terms up to alpha-conversion. This strategy falls between most previous works, which either treat bound variable names literally or dispense with them altogether. The theory has been implemented in the Cambridge HOL system and used in an experimental application.},
+  isbn      = {978-3-540-48346-5},
+}
+
+@InProceedings{hoas,
+  author    = {Pfenning, F. and Elliott, C.},
+  title     = {Higher-order Abstract Syntax},
+  booktitle = {Proceedings of the ACM SIGPLAN 1988 Conference on Programming Language Design and Implementation},
+  year      = {1988},
+  series    = {PLDI '88},
+  pages     = {199--208},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  acmid     = {54010},
+  doi       = {10.1145/53990.54010},
+  isbn      = {0-89791-269-1},
+  location  = {Atlanta, Georgia, USA},
+  numpages  = {10},
+  url       = {http://doi.acm.org/10.1145/53990.54010},
+}
+
+@InProceedings{phoas,
+  author    = {Chlipala, Adam},
+  title     = {Parametric Higher-order Abstract Syntax for Mechanized Semantics},
+  booktitle = {Proceedings of the 13th ACM SIGPLAN International Conference on Functional Programming},
+  year      = {2008},
+  series    = {ICFP '08},
+  pages     = {143--156},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  acmid     = {1411226},
+  doi       = {10.1145/1411204.1411226},
+  isbn      = {978-1-59593-919-7},
+  keywords  = {compiler verification, dependent types, interactive proof assistants, type-theoretic semantics},
+  location  = {Victoria, BC, Canada},
+  numpages  = {14},
+  url       = {http://doi.acm.org/10.1145/1411204.1411226},
+}
+
+@InProceedings{implementing-typeful-program-transformations,
+  author    = {Chen, Chiyan and Xi, Hongwei},
+  title     = {Implementing Typeful Program Transformations},
+  booktitle = {Proceedings of the 2003 ACM SIGPLAN Workshop on Partial Evaluation and Semantics-based Program Manipulation},
+  year      = {2003},
+  series    = {PEPM '03},
+  pages     = {20--28},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  acmid     = {777392},
+  doi       = {10.1145/777388.777392},
+  isbn      = {1-58113-667-6},
+  keywords  = {CPS, DML, continuation-passing style, dependent ML, dependent types, typeful program transformation},
+  location  = {San Diego, California, USA},
+  numpages  = {9},
+  url       = {http://doi.acm.org/10.1145/777388.777392},
+}
+
+@Unpublished{well-typed-interpreter,
+  author = {Augustsson, Lennart and Carlsson, Magnus},
+  title  = {An exercise in dependent types: A well-typed interpreter},
+  note   = {Unpublished manuscript},
+  year   = {1999},
+  url    = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.39.2895&rep=rep1&type=pdf},
+}
+
+@InProceedings{ats,
+  author    = {Xi, Hongwei},
+  title     = {Applied Type System},
+  booktitle = {Types for Proofs and Programs},
+  year      = {2004},
+  editor    = {Berardi, Stefano and Coppo, Mario and Damiani, Ferruccio},
+  pages     = {394--408},
+  address   = {Berlin, Heidelberg},
+  publisher = {Springer Berlin Heidelberg},
+  isbn      = {978-3-540-24849-1},
+}
+
+@InProceedings{binders-unbound,
+  author    = {Weirich, Stephanie and Yorgey, Brent A. and Sheard, Tim},
+  title     = {Binders Unbound},
+  booktitle = {Proceedings of the 16th ACM SIGPLAN International Conference on Functional Programming},
+  year      = {2011},
+  series    = {ICFP '11},
+  pages     = {333--345},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  acmid     = {2034818},
+  doi       = {10.1145/2034773.2034818},
+  isbn      = {978-1-4503-0865-6},
+  keywords  = {generic programming, haskell, name binding, patterns},
+  location  = {Tokyo, Japan},
+  numpages  = {13},
+  url       = {http://doi.acm.org/10.1145/2034773.2034818},
+}
+
+@Misc{hair-shirt,
+  author       = {Peyton Jones, Simon},
+  title        = {Wearing the Hair Shirt: A Retrospective on {H}askell},
+  howpublished = {Invited talk at POPL},
+  year         = {2003},
+}
+
+@InCollection{mtl,
+  author    = {Jones, Mark P.},
+  title     = {Functional Programming with Overloading and Higher-Order Polymorphism},
+  booktitle = {Advanced Functional Programming},
+  publisher = {Springer Verlag},
+  year      = {1995},
+  editor    = {Jeuring, Johan and Meijer, Erik},
+  volume    = {925},
+  series    = {LNCS},
+}
+
+@TechReport{parsec,
+  author      = {Leijen, Daan},
+  title       = {Parsec: a fast combinator parser},
+  institution = {University of Utrecht},
+  year        = {2001},
+  number      = {UU-CS-2001-26},
+}
+
+@InProceedings{principal-type-inference-for-gadts,
+  author    = {Chen, Sheng and Erwig, Martin},
+  title     = {Principal Type Inference for GADTs},
+  booktitle = {Proceedings of the 43rd Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+  year      = {2016},
+  series    = {POPL '16},
+  pages     = {416--428},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  acmid     = {2837665},
+  doi       = {10.1145/2837614.2837665},
+  isbn      = {978-1-4503-3549-2},
+  keywords  = {Choice Type, GADT, Type Inference, Type Reconciliation, Variational Unification},
+  location  = {St. Petersburg, FL, USA},
+  numpages  = {13},
+  url       = {http://doi.acm.org/10.1145/2837614.2837665},
+}
+
+@InProceedings{quantified-constraints,
+  author    = {Bottu, Gert-Jan and Karachalias, Georgios and Schrijvers, Tom and Oliveira, Bruno C. d. S. and Wadler, Philip},
+  title     = {Quantified Class Constraints},
+  booktitle = {Proceedings of the 10th ACM SIGPLAN International Symposium on Haskell},
+  year      = {2017},
+  series    = {Haskell 2017},
+  pages     = {148--161},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  acmid     = {3122967},
+  doi       = {10.1145/3122955.3122967},
+  isbn      = {978-1-4503-5182-9},
+  keywords  = {Haskell, type classes, type inference},
+  location  = {Oxford, UK},
+  numpages  = {14},
+  url       = {http://doi.acm.org/10.1145/3122955.3122967},
+}
+
+@InProceedings{rewrite-rules,
+  author    = {Peyton Jones, Simon and Tolmach, Andrew and Hoare, Tony},
+  title     = {Playing by the Rules: Rewriting as a practical optimisation technique in {GHC}},
+  booktitle = {Proceedings of the Haskell Workshop},
+  year      = {2001},
+}
+
+@InProceedings{path-dependent-types,
+  author    = {Amin, Nada and Rompf, Tiark and Odersky, Martin},
+  title     = {Foundations of Path-dependent Types},
+  booktitle = {Proceedings of the 2014 ACM International Conference on Object Oriented Programming Systems Languages \& Applications},
+  year      = {2014},
+  series    = {OOPSLA '14},
+  pages     = {233--249},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  acmid     = {2660216},
+  doi       = {10.1145/2660193.2660216},
+  isbn      = {978-1-4503-2585-1},
+  keywords  = {calculus, dependent types, objects},
+  location  = {Portland, Oregon, USA},
+  numpages  = {17},
+  url       = {http://doi.acm.org.proxy.brynmawr.edu/10.1145/2660193.2660216},
+}
+
+@InProceedings{tagless-staged-interpreters,
+  author    = {Pa\v{s}ali\'{c}, Emir and Taha, Walid and Sheard, Tim},
+  title     = {Tagless Staged Interpreters for Typed Languages},
+  booktitle = {Proceedings of the Seventh ACM SIGPLAN International Conference on Functional Programming},
+  year      = {2002},
+  series    = {ICFP '02},
+  pages     = {218--229},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  acmid     = {581499},
+  doi       = {10.1145/581478.581499},
+  isbn      = {1-58113-487-8},
+  keywords  = {calculus of constructions, definitional interpreters, domain-specific languages, multi-stage programming},
+  location  = {Pittsburgh, PA, USA},
+  numpages  = {12},
+  url       = {http://doi.acm.org/10.1145/581478.581499},
+}
+
+@InCollection{taha-tag-elimination,
+  author    = {Taha, Walid and Makholm, Henning and Hughes, John},
+  title     = {Tag elimination and {J}ones-optimality},
+  booktitle = {Programs as Data Objects},
+  publisher = {Springer Verlag},
+  year      = {2001},
+  editor    = {Danvy, Olivier and Filinski, Andrzej},
+  volume    = {2053},
+  series    = {LNCS},
+}
+
+@InCollection{wadler-prettier-printer,
+  author    = {Wadler, Philip},
+  title     = {A Prettier Printer},
+  booktitle = {The Fun of Programming: Essays in Honor of Richard Bird},
+  publisher = {Palgrave},
+  year      = {2003},
+  editor    = {Gibbons, Jeremy and De Moor, Oege},
+}
+
+@TechReport{wobbly-types,
+  author      = {Peyton Jones, Simon and Washburn, Geoffrey and Weirich, Stephanie},
+  title       = {Wobbly types: type inference for generalised algebraic data types},
+  institution = {University of Pennsylvania},
+  year        = {2004},
+  number      = {MS-CIS-05-26},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
