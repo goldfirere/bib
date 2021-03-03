@@ -1,20 +1,5 @@
 % Encoding: UTF-8
 
-
-@InProceedings{type-classes,
-  Title                    = {How to Make ad-hoc Polymorphism Less ad-hoc},
-  Author                   = {Philip Wadler and Stephen Blott},
-  Booktitle                = {POPL},
-  Year                     = {1989},
-  Pages                    = {60-76},
-
-  Bibsource                = {DBLP, http://dblp.uni-trier.de},
-  Crossref                 = {DBLP:conf/popl/1989},
-  Ee                       = {http://doi.acm.org/10.1145/75277.75283},
-  Owner                    = {rae},
-  Timestamp                = {2015.05.08}
-}
-
 @InProceedings{popl-roles,
   Title                    = {Generative type abstraction and type-level computation},
   Author                   = {Stephanie Weirich and
@@ -30,6 +15,110 @@
   Ee                       = {http://doi.acm.org/10.1145/1926385.1926411},
   Owner                    = {rae},
   Timestamp                = {2015.05.07}
+}
+
+@InProceedings{type-classes,
+  author    = {Philip Wadler and Stephen Blott},
+  booktitle = {POPL},
+  title     = {How to Make ad-hoc Polymorphism Less ad-hoc},
+  year      = {1989},
+  pages     = {60-76},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  ee        = {http://doi.acm.org/10.1145/75277.75283},
+  owner     = {rae},
+  timestamp = {2015.05.08},
+}
+
+@techreport{tate2008a,
+author = {Tate, Ross and Chen, Juan and Hawblitzel, Chris},
+title = {A Flexible Framework for Type Inference with Existential Quantification},
+year = {2008},
+month = {December},
+abstract = {Preserving types through compilation guarantees safety of the compiler output without trusting the compiler: the compiler output is annotated with types and can be verified. Type inference can make this technique more practical by inferring most of the needed type information. Existential types, however, are difficult to infer, especially those with implicit pack and unpack operations.
+This paper proposes a framework for type inference with existential quantification and demonstrates the framework on a small object-oriented typed assembly language. The framework is flexible enough to support language features such as downward cast, arrays, and interfaces. The framework is based on category theory, the first such application of category theory to type inference to the best of our knowledge.},
+publisher = {Microsoft},
+url = {https://www.microsoft.com/en-us/research/publication/a-flexible-framework-for-type-inference-with-existential-quantification/},
+number = {MSR-TR-2008-184},
+}
+
+@InProceedings{kato,
+author="Kato, Yuki
+and Nakazawa, Koji",
+editor="Escobar, Santiago",
+title="Type Checking and Inference Are Equivalent in Lambda Calculi with Existential Types",
+booktitle="Functional and Constraint Logic Programming",
+year="2010",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="96--110",
+abstract="This paper shows that type-checking and type-inference problems are equivalent in domain-free lambda calculi with existential types, that is, type-checking problem is Turing reducible to type-inference problem and vice versa. In this paper, the equivalence is proved for two variants of domain-free lambda calculi with existential types: one is an implication and existence fragment, and the other is a negation, conjunction and existence fragment. This result gives another proof of undecidability of type inference in the domain-free calculi with existence.",
+isbn="978-3-642-11999-6"
+}
+
+
+
+@Unpublished{leijen:first-class-existentials,
+  author =       {Daan Leijen},
+  title =        {First-class polymorphism with existential types},
+  note =         {Unpublished},
+  year =      2006}
+
+@PhdThesis{perry:phd,
+  author =       {Nigel Perry},
+  title =        {The implementation of practical functional programming languages},
+  school =       {Imperial College of Science, Technology and Medicine,
+University of London},
+  year =         1991}
+
+@article{laufer1994polymorphic,
+  title={Polymorphic type inference and abstract data types},
+  author={L{\"a}ufer, Konstantin and Odersky, Martin},
+  journal={ACM Transactions on Programming Languages and Systems (TOPLAS)},
+  volume={16},
+  number={5},
+  pages={1411--1430},
+  year={1994},
+  publisher={ACM New York, NY, USA}
+}
+
+
+@inproceedings{macqueen1986using,
+  title={Using dependent types to express modular structure},
+  author={MacQueen, David B},
+  booktitle={Proceedings of the 13th ACM SIGACT-SIGPLAN symposium on Principles of programming languages},
+  pages={277--286},
+  year={1986}
+}
+
+@inproceedings{cardelli1990abstract,
+  title={Abstract types and the dot notation},
+  author={Cardelli, Luca and Leroy, Xavier},
+  booktitle={IFIP TC2 working conference on programming concepts and methods},
+  pages={479--504},
+  year={1990},
+  organization={North-Holland}
+}
+
+@article{mitchell1988abstract,
+  title={Abstract types have existential type},
+  author={Mitchell, John C and Plotkin, Gordon D},
+  journal={ACM Transactions on Programming Languages and Systems (TOPLAS)},
+  volume={10},
+  number={3},
+  pages={470--502},
+  year={1988},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{rossberg2014f,
+  title={F-ing modules},
+  author={Rossberg, Andreas and Russo, Claudio and Dreyer, Derek},
+  journal={Journal of functional programming},
+  volume={24},
+  number={5},
+  pages={529--607},
+  year={2014},
+  publisher={Cambridge University Press}
 }
 
 @inproceedings{pj-meijer:heaven-and-hell,
@@ -239,20 +328,20 @@
 }
 
 @Article{debruijn,
-  author        = {de Bruijn, Nicolaas Govert},
-  title         = {Lambda calculus notation with nameless dummies, a tool for automatic formula manipulation, with application to the Church-Rosser theorem},
-  journal       = {Indagationes Mathematicae (Proceedings)},
-  year          = {1972},
-  volume        = {75},
-  number        = {5},
-  pages         = {381-392},
-  issn          = {1385-7258},
-  __markedentry = {[rae:6]},
-  doi           = {10.1016/1385-7258(72)90034-0},
-  owner         = {rae},
-  publisher     = {Elsevier BV},
-  timestamp     = {2015.05.08},
-  url           = {http://dx.doi.org/10.1016/1385-7258(72)90034-0},
+  author    = {de Bruijn, Nicolaas Govert},
+  journal   = {Indagationes Mathematicae (Proceedings)},
+  title     = {Lambda calculus notation with nameless dummies, a tool for automatic formula manipulation, with application to the Church-Rosser theorem},
+  year      = {1972},
+  issn      = {1385-7258},
+  number    = {5},
+  pages     = {381-392},
+  volume    = {75},
+  doi       = {10.1016/1385-7258(72)90034-0},
+  groups    = {rae:6},
+  owner     = {rae},
+  publisher = {Elsevier BV},
+  timestamp = {2015.05.08},
+  url       = {http://dx.doi.org/10.1016/1385-7258(72)90034-0},
 }
 
 @InProceedings{hlio,
@@ -578,19 +667,28 @@
   Timestamp                = {2015.05.08}
 }
 
-@Unpublished{bidirectional-existentials,
-  Title                    = {Sound and Complete Bidirectional Typechecking for Higher-Rank Polymorphism with Existentials and Indexed Types},
-  Author                   = {Joshua Dunfield and Neelakantan R. Krishnaswami},
-  Year                     = {2016},
-
-  Owner                    = {rae},
-  Timestamp                = {2016.01.24},
-  Url                      = {http://arxiv.org/pdf/1601.05106v1.pdf}
+@Article{bidirectional-existentials,
+  author     = {Dunfield, Jana and Krishnaswami, Neelakantan R.},
+  journal    = {Proc. ACM Program. Lang.},
+  title      = {Sound and Complete Bidirectional Typechecking for Higher-Rank Polymorphism with Existentials and Indexed Types},
+  year       = {2019},
+  month      = jan,
+  number     = {POPL},
+  volume     = {3},
+  abstract   = {Bidirectional typechecking, in which terms either synthesize a type or are checked against a known type, has become popular for its applicability to a variety of type systems, its error reporting, and its ease of implementation. Following principles from proof theory, bidirectional typing can be applied to many type constructs. The principles underlying a bidirectional approach to indexed types (generalized algebraic datatypes) are less clear. Building on proof-theoretic treatments of equality, we give a declarative specification of typing based on focalization. This approach permits declarative rules for coverage of pattern matching, as well as support for first-class existential types using a focalized subtyping judgment. We use refinement types to avoid explicitly passing equality proofs in our term syntax, making our calculus similar to languages such as Haskell and OCaml. We also extend the declarative specification with an explicit rules for deducing when a type is principal, permitting us to give a complete declarative specification for a rich type system with significant type inference. We also give a set of algorithmic typing rules, and prove that it is sound and complete with respect to the declarative system. The proof requires a number of technical innovations, including proving soundness and completeness in a mutually recursive fashion.},
+  address    = {New York, NY, USA},
+  articleno  = {9},
+  doi        = {10.1145/3290322},
+  issue_date = {January 2019},
+  keywords   = {equality types, GADTs, bidirectional typechecking, existential types, higher-rank polymorphism, indexed types},
+  numpages   = {28},
+  publisher  = {Association for Computing Machinery},
+  url        = {https://doi.org/10.1145/3290322},
 }
 
 @InProceedings{simple-bidirectional,
   Title                    = {Complete and Easy Bidirectional Typechecking for Higher-rank Polymorphism},
-  Author                   = {Dunfield, Joshua and Krishnaswami, Neelakantan R.},
+  Author                   = {Dunfield, Jana and Krishnaswami, Neelakantan R.},
   Booktitle                = {International Conference on Functional Programming},
   Year                     = {2013},
   Publisher                = {ACM},
@@ -599,7 +697,7 @@
 
 @InProceedings{tridirectional-typechecking,
   Title                    = {Tridirectional Typechecking},
-  Author                   = {Dunfield, Joshua and Pfenning, Frank},
+  Author                   = {Dunfield, Jana and Pfenning, Frank},
   Booktitle                = {Proceedings of the 31st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
   Year                     = {2004},
 
@@ -829,15 +927,15 @@
 }
 
 @InCollection{girard-systemf,
-  Title                    = {Une Extension De L'Interpretation De {G\"odel} \`a L'Analyse, Et Son Application \`a L'\'Elimination Des Coupures Dans L'Analyse Et La Theorie Des Types},
-  Author                   = {Jean-Yves Girard},
-  Booktitle                = {Proceedings of the Second Scandinavian Logic Symposium},
-  Publisher                = {Elsevier},
-  Year                     = {1971},
-  Editor                   = {J.E. Fenstad},
-  Pages                    = {63 - 92},
-  Series                   = {Studies in Logic and the Foundations of Mathematics },
-  Volume                   = {63},
+  author    = {Jean-Yves Girard},
+  booktitle = {Proceedings of the Second Scandinavian Logic Symposium},
+  publisher = {Elsevier},
+  title     = {Une Extension De L'Interpretation De {G\"odel} \`a L'Analyse, Et Son Application \`a L'\'Elimination Des Coupures Dans L'Analyse Et La Theorie Des Types},
+  year      = {1971},
+  editor    = {J.E. Fenstad},
+  pages     = {63 - 92},
+  series    = {Studies in Logic and the Foundations of Mathematics},
+  volume    = {63},
 }
 
 @PhdThesis{girard-thesis,
@@ -1293,13 +1391,11 @@ and Plotkin, Gordon},
 }
 
 @Misc{haskell2010,
-  Title                    = {Haskell 2010 Language Report},
-
-  Author                   = {Simon {Marlow (editor)} },
-  Year                     = {2010},
-
-  Owner                    = {rae},
-  Timestamp                = {2015.05.08}
+  author    = {Simon {Marlow (editor)}},
+  title     = {Haskell 2010 Language Report},
+  year      = {2010},
+  owner     = {rae},
+  timestamp = {2015.05.08},
 }
 
 @Misc{agda-curious,
@@ -1657,17 +1753,16 @@ and Plotkin, Gordon},
   Publisher                = {ACM}
 }
 
-@InBook{remy-attapl,
-  Title                    = {Advanced Topics in Types and Programming Languages},
-  Author                   = {Pottier, Fran\c{c}ois and R\'{e}my, Didier},
-  Chapter                  = {{The Essence of ML Type Inference}},
-  Editor                   = {Benjamin C. Pierce},
-  Pages                    = {387--489},
-  Publisher                = {The MIT Press},
-  Year                     = {2005},
-
-  Owner                    = {rae},
-  Timestamp                = {2015.07.07}
+@InCollection{remy-attapl,
+  author    = {Pottier, Fran\c{c}ois and R\'{e}my, Didier},
+  booktitle = {Advanced Topics in Types and Programming Languages},
+  publisher = {The MIT Press},
+  title     = {{The Essence of ML Type Inference}},
+  year      = {2005},
+  editor    = {Benjamin C. Pierce},
+  pages     = {387--489},
+  owner     = {rae},
+  timestamp = {2015.07.07},
 }
 
 @InProceedings{defunctionalization,
@@ -1787,19 +1882,18 @@ and Plotkin, Gordon},
   Timestamp                = {2015.05.27}
 }
 
-@InProceedings{systemfc,
-  Title                    = {System {F} with type equality coercions},
-  Author                   = {Sulzmann, Martin and Chakravarty, Manuel M. T. and {Peyton Jones}, Simon and Donnelly, Kevin},
-  Booktitle                = {Types in languages design and implementation},
-  Year                     = {2007},
-  Publisher                = {ACM},
-  Series                   = {TLDI '07},
-
-  Acmid                    = {1190324},
-  Keywords                 = {advanced type features, typed intermediate language},
-  Location                 = {Nice, Nice, France},
-  Owner                    = {rae},
-  Timestamp                = {2015.05.07}
+@InProceedings{system-fc,
+  author    = {Sulzmann, Martin and Chakravarty, Manuel M. T. and {Peyton Jones}, Simon and Donnelly, Kevin},
+  booktitle = {Types in languages design and implementation},
+  title     = {System {F} with type equality coercions},
+  year      = {2007},
+  publisher = {ACM},
+  series    = {TLDI '07},
+  acmid     = {1190324},
+  keywords  = {advanced type features, typed intermediate language},
+  location  = {Nice, Nice, France},
+  owner     = {rae},
+  timestamp = {2015.05.07},
 }
 
 @Article{fundeps-chr,
@@ -2183,24 +2277,6 @@ and Plotkin, Gordon},
   Timestamp                = {2015.05.08}
 }
 
-@Proceedings{DBLP:conf/esop/2000,
-  Title                    = {Programming Languages and Systems, 9th European Symposium
- on Programming, ESOP 2000, Held as Part of the European
- Joint Conferences on the Theory and Practice of Software,
- ETAPS 2000, Berlin, Germany, March 25 - April 2, 2000, Proceedings},
-  Year                     = {2000},
-  Editor                   = {Gert Smolka},
-  Publisher                = {Springer},
-  Series                   = {Lecture Notes in Computer Science},
-  Volume                   = {1782},
-
-  Bibsource                = {DBLP, http://dblp.uni-trier.de},
-  Booktitle                = {ESOP},
-  ISBN                     = {3-540-67262-1},
-  Owner                    = {rae},
-  Timestamp                = {2015.05.08}
-}
-
 @Proceedings{DBLP:conf/popl/2011,
   Title                    = {Proceedings of the 38th ACM SIGPLAN-SIGACT Symposium on
  Principles of Programming Languages, POPL 2011, Austin,
@@ -2215,19 +2291,6 @@ and Plotkin, Gordon},
   Timestamp                = {2015.05.07}
 }
 
-@Proceedings{DBLP:conf/icfp/2005,
-  Title                    = {Proceedings of the 10th ACM SIGPLAN International Conference
- on Functional Programming, ICFP 2005, Tallinn, Estonia,
- September 26-28, 2005},
-  Year                     = {2005},
-  Publisher                = {ACM},
-
-  Bibsource                = {DBLP, http://dblp.uni-trier.de},
-  Booktitle                = {ICFP},
-  Owner                    = {rae},
-  Timestamp                = {2015.05.08}
-}
-
 @Proceedings{DBLP:conf/popl/2005,
   Title                    = {Proceedings of the 32nd ACM SIGPLAN-SIGACT Symposium on
  Principles of Programming Languages, POPL 2005, Long Beach,
@@ -2238,20 +2301,6 @@ and Plotkin, Gordon},
   Bibsource                = {DBLP, http://dblp.uni-trier.de},
   Booktitle                = {POPL},
   Ee                       = {http://dl.acm.org/citation.cfm?id=1040305},
-  Owner                    = {rae},
-  Timestamp                = {2015.05.08}
-}
-
-@Proceedings{DBLP:conf/popl/1989,
-  Title                    = {Conference Record of the Sixteenth Annual ACM Symposium
- on Principles of Programming Languages, Austin, Texas, USA,
- January 11-13, 1989},
-  Year                     = {1989},
-  Publisher                = {ACM},
-
-  Bibsource                = {DBLP, http://dblp.uni-trier.de},
-  Booktitle                = {POPL},
-  Ee                       = {http://dl.acm.org/citation.cfm?id=75277},
   Owner                    = {rae},
   Timestamp                = {2015.05.08}
 }
@@ -2574,30 +2623,18 @@ and Plotkin, Gordon},
   publisher  = {ACM},
 }
 
-@inproceedings{ghc-transforming-optimizer,
-author = {Peyton Jones, Simon and Santos, Andr\'e},
-title = {A transformation-based optimiser for {Haskell}},
-year = {1997},
-month = {October},
-abstract = {
+@InProceedings{ghc-transforming-optimizer,
+  author    = {Peyton Jones, Simon and Santos, Andr\'e},
+  booktitle = {Science of Computer Programming},
+  title     = {A transformation-based optimiser for {Haskell}},
+  year      = {1997},
+  month     = {October},
+  pages     = {3-47},
+  publisher = {Elsevier},
+  volume    = {32},
+  abstract  = {Many compilers do some of their work by means of correctness-preserving, and hopefully performance-improving, program transformations. The Glasgow Haskell Compiler (GHC) takes this idea of "compilation by transformation" as its war-cry, trying to express as much as possible of the compilation process in the form of program transformations.
 
-
-Many compilers do some of their work by means of correctness-preserving, and hopefully performance-improving, program transformations. The Glasgow Haskell Compiler (GHC) takes this idea of "compilation by transformation" as its war-cry, trying to express as much as possible of the compilation process in the form of program transformations.
-
-This paper reports on our practical experience of the transformational approach to compilation, in the context of a substantial compiler.
-
-
-
-
-
-},
-publisher = {Elsevier},
-address = {},
-pages = {3-47},
-booktitle = {Science of Computer Programming},
-volume = {32},
-chapter = {},
-isbn = {},
+This paper reports on our practical experience of the transformational approach to compilation, in the context of a substantial compiler.},
 }
 
 @Misc{mlton,
@@ -2659,7 +2696,7 @@ isbn = {},
 }
 
 @InProceedings{evaluation-order-polymorphism,
-  author    = {Dunfield, Joshua},
+  author    = {Dunfield, Jana},
   title     = {Elaborating Evaluation-order Polymorphism},
   booktitle = {Proceedings of the 20th ACM SIGPLAN International Conference on Functional Programming},
   year      = {2015},
@@ -3156,4 +3193,422 @@ isbn="978-3-540-78800-3"
   url        = {http://doi.acm.org/10.1145/3110275},
 }
 
+@Conference{xie-coercion-quantification,
+  author    = {Xie, Ningning and Eisenberg, Richard A.},
+  title     = {Coercion Quantification},
+  booktitle = {Haskell Implementors' Workshop},
+  year      = {2018},
+}
+
+@InProceedings{view-patterns,
+  author    = {Wadler, Philip},
+  title     = {Views: A Way for Pattern Matching to Cohabit with Data Abstraction},
+  booktitle = {Proceedings of the 14th ACM SIGACT-SIGPLAN Symposium on Principles of Programming Languages},
+  year      = {1987},
+  series    = {POPL ’87},
+  pages     = {307–313},
+  address   = {New York, NY, USA},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/41625.41653},
+  isbn      = {0897912152},
+  location  = {Munich, West Germany},
+  numpages  = {7},
+  url       = {https://doi.org/10.1145/41625.41653},
+}
+
+@InProceedings{constraint-kinds,
+  author    = {Orchard, Dominic and Schrijvers, Tom},
+  title     = {Haskell Type Constraints Unleashed},
+  booktitle = {Functional and Logic Programming},
+  year      = {2010},
+  editor    = {Blume, Matthias and Kobayashi, Naoki and Vidal, Germ{\'a}n},
+  pages     = {56--71},
+  address   = {Berlin, Heidelberg},
+  publisher = {Springer Berlin Heidelberg},
+  abstract  = {The popular Glasgow Haskell Compiler extends the Haskell 98 type system with several powerful features, leading to an expressive language of type terms. In contrast, constraints over types have received much less attention, creating an imbalance in the expressivity of the type system. In this paper, we rectify the imbalance, transferring familiar type-level constructs, synonyms and families, to the language of constraints, providing a symmetrical set of features at the type-level and constraint-level. We introduce constraint synonyms and constraint families, and illustrate their increased expressivity for improving the utility of polymorphic EDSLs in Haskell, amongst other examples. We provide a discussion of the semantics of the new features relative to existing type system features and similar proposals, including details of termination.},
+  isbn      = {978-3-642-12251-4},
+}
+
+@InProceedings{safe-haskell,
+  author    = {Terei, David and Marlow, Simon and Peyton Jones, Simon and Mazi\`{e}res, David},
+  title     = {Safe {Haskell}},
+  booktitle = {Proceedings of the 2012 Haskell Symposium},
+  year      = {2012},
+  series    = {Haskell ’12},
+  pages     = {137–148},
+  address   = {New York, NY, USA},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/2364506.2364524},
+  isbn      = {9781450315746},
+  keywords  = {haskell, security, type safety},
+  location  = {Copenhagen, Denmark},
+  numpages  = {12},
+  url       = {https://doi.org/10.1145/2364506.2364524},
+}
+
+@InProceedings{pattern-guards,
+  author    = {Erwig, Martin and Peyton Jones, Simon},
+  title     = {Pattern Guards and Transformational Patterns},
+  booktitle = {Haskell Workshop 2000},
+  year      = {2000},
+  month     = {September},
+  abstract  = {We propose three extensions to patterns and pattern matching in Haskell. The first, pattern guards, allows the guards of a guarded equation to match patterns and bind variables, as well as to test boolean condition. For this we introduce a natural generalization of guard expressions to guard qualifiers.
+
+A frequently-occurring special case is that a function should be applied to a matched value, and the result of this is to be matched against another pattern. For this we introduce a syntactic abbreviation, transformational patterns, that is particularly useful when dealing with views. These proposals can be implemented with very modest syntactic and implementation cost. They are upward compatible with Haskell; all existing programs will continue to work.
+
+We also offer a third, much more speculative proposal, which provides the transformational-pattern construct with additional power to explicitly catch pattern match failure.
+
+We demonstrate the usefulness of the proposed extension by several examples, in particular, we compare our proposal with views, and we also discuss the use of the new patterns in combination with equational reasoning.
+
+&nbsp;},
+  edition   = {Haskell Workshop 2000},
+  url       = {https://www.microsoft.com/en-us/research/publication/pattern-guards-and-transformational-patterns/},
+}
+
+@InProceedings{type-classes-design,
+  author    = {Peyton Jones, Simon and Jones, Mark and Meijer, Erik},
+  title     = {Type classes: an exploration of the design space},
+  booktitle = {Haskell Workshop},
+  year      = {1997},
+  editor    = {Launchbury, John},
+  address   = {Amsterdam, Netherlands},
+}
+
+@InProceedings{guarded-impredicativity,
+  author    = {Serrano, Alejandro and Hage, Jurriaan and Vytiniotis, Dimitrios and Peyton Jones, Simon},
+  title     = {Guarded Impredicative Polymorphism},
+  booktitle = {Proceedings of the 39th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+  year      = {2018},
+  series    = {PLDI 2018},
+  pages     = {783–796},
+  address   = {New York, NY, USA},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/3192366.3192389},
+  isbn      = {9781450356985},
+  keywords  = {constraint-based inference, Type systems, impredicative polymorphism},
+  location  = {Philadelphia, PA, USA},
+  numpages  = {14},
+  url       = {https://doi.org/10.1145/3192366.3192389},
+}
+
+@Article{wadler-plfa,
+  author   = {Wen Kokke and Jeremy G. Siek and Philip Wadler},
+  title    = {Programming Language Foundations in Agda},
+  journal  = {Science of Computer Programming},
+  year     = {2020},
+  volume   = {194},
+  pages    = {102440},
+  issn     = {0167-6423},
+  abstract = {One of the leading textbooks for formal methods is Software Foundations (SF), written by Benjamin Pierce in collaboration with others, and based on Coq. After five years using SF in the classroom, we came to the conclusion that Coq is not the best vehicle for this purpose, as too much of the course needs to focus on learning tactics for proof derivation, to the cost of learning programming language theory. Accordingly, we have written a new textbook, Programming Language Foundations in Agda (PLFA). PLFA covers much of the same ground as SF, although it is not a slavish imitation. What did we learn from writing PLFA? First, that it is possible. One might expect that without proof tactics that the proofs become too long, but in fact proofs in PLFA are about the same length as those in SF. Proofs in Coq require an interactive environment to be understood, while proofs in Agda can be read on the page. Second, that constructive proofs of preservation and progress give immediate rise to a prototype evaluator. This fact is obvious in retrospect but it is not exploited in SF (which instead provides a separate normalise tactic) nor can we find it in the literature. Third, that using extrinsically-typed terms is far less perspicuous than using intrinsically-typed terms. SF uses the former presentation, while PLFA presents both; the former uses about 1.6 as many lines of Agda code as the latter, roughly the golden ratio. The textbook is written as a literate Agda script, and can be found here: http://plfa.inf.ed.ac.uk},
+  doi      = {https://doi.org/10.1016/j.scico.2020.102440},
+  keywords = {Agda, Coq, Lambda calculus, Dependent types},
+  url      = {http://www.sciencedirect.com/science/article/pii/S0167642320300502},
+}
+
+@InProceedings{montagu-existential-modules,
+  author    = {Montagu, Beno\^{\i}t and R\'{e}my, Didier},
+  booktitle = {Proceedings of the 36th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+  title     = {Modeling Abstract Types in Modules with Open Existential Types},
+  year      = {2009},
+  address   = {New York, NY, USA},
+  pages     = {354–365},
+  publisher = {Association for Computing Machinery},
+  series    = {POPL '09},
+  abstract  = {We propose F-zip, a calculus of open existential types that is an extension of System F obtained by decomposing the introduction and elimination of existential types into more atomic constructs. Open existential types model modular type abstraction as done in module systems. The static semantics of F-zip adapts standard techniques to deal with linearity of typing contexts, its dynamic semantics is a small-step reduction semantics that performs extrusion of type abstraction as needed during reduction, and the two are related by subject reduction and progress lemmas. Applying the Curry-Howard isomorphism, F-zip can be also read back as a logic with the same expressive power as second-order logic but with more modular ways of assembling partial proofs. We also extend the core calculus to handle the double vision problem as well as type-level and term-level recursion. The resulting language turns out to be a new formalization of (a minor variant of) Dreyer's internal language for recursive and mixin modules.},
+  doi       = {10.1145/1480881.1480926},
+  isbn      = {9781605583792},
+  keywords  = {lambda-calculus, type systems, linear type systems, existential types, modularity, generativity, modules, abstract types},
+  location  = {Savannah, GA, USA},
+  numpages  = {12},
+  url       = {https://doi.org/10.1145/1480881.1480926},
+}
+
+@Article{weirich-role-dth,
+  author     = {Weirich, Stephanie and Choudhury, Pritam and Voizard, Antoine and Eisenberg, Richard A.},
+  journal    = {Proc. ACM Program. Lang.},
+  title      = {A Role for Dependent Types in Haskell},
+  year       = {2019},
+  month      = jul,
+  number     = {ICFP},
+  volume     = {3},
+  abstract   = {Modern Haskell supports zero-cost coercions, a mechanism where types that share the same run-time representation may be freely converted between. To make sure such conversions are safe and desirable, this feature relies on a mechanism of roles to prohibit invalid coercions. In this work, we show how to incorporate roles into dependent types systems and prove, using the Coq proof assistant, that the resulting system is sound. We have designed this work as a foundation for the addition of dependent types to the Glasgow Haskell Compiler, but we also expect that it will be of use to designers of other dependently-typed languages who might want to adopt Haskell’s safe coercions feature.},
+  address    = {New York, NY, USA},
+  articleno  = {101},
+  doi        = {10.1145/3341705},
+  issue_date = {August 2019},
+  keywords   = {Haskell, Dependent Types},
+  numpages   = {29},
+  publisher  = {Association for Computing Machinery},
+  url        = {https://doi.org/10.1145/3341705},
+}
+
+@Article{graded-dependent-types,
+  author     = {Choudhury, Pritam and Eades III, Harley and Eisenberg, Richard A. and Weirich, Stephanie},
+  journal    = {Proc. ACM Program. Lang.},
+  title      = {A Graded Dependent Type System with a Usage-Aware Semantics},
+  year       = {2021},
+  month      = jan,
+  number     = {POPL},
+  volume     = {5},
+  abstract   = {Graded Type Theory provides a mechanism to track and reason about resource usage in type systems. In this paper, we develop GraD, a novel version of such a graded dependent type system that includes functions, tensor products, additive sums, and a unit type. Since standard operational semantics is resource-agnostic, we develop a heap-based operational semantics and prove a soundness theorem that shows correct accounting of resource usage. Several useful properties, including the standard type soundness theorem, non-interference of irrelevant resources in computation and single pointer property for linear resources, can be derived from this theorem. We hope that our work will provide a base for integrating linearity, irrelevance and dependent types in practical programming languages like Haskell.},
+  address    = {New York, NY, USA},
+  articleno  = {50},
+  doi        = {10.1145/3434331},
+  issue_date = {January 2021},
+  keywords   = {heap semantics, quantitative reasoning, Irrelevance, linearity},
+  numpages   = {32},
+  publisher  = {Association for Computing Machinery},
+  url        = {https://doi.org/10.1145/3434331},
+}
+
+@Article{quick-look,
+  author     = {Serrano, Alejandro and Hage, Jurriaan and Peyton Jones, Simon and Vytiniotis, Dimitrios},
+  journal    = {Proc. ACM Program. Lang.},
+  title      = {A Quick Look at Impredicativity},
+  year       = {2020},
+  month      = aug,
+  number     = {ICFP},
+  volume     = {4},
+  abstract   = {Type inference for parametric polymorphism is wildly successful, but has always suffered from an embarrassing flaw: polymorphic types are themselves not first class. We present Quick Look, a practical, implemented, and deployable design for impredicative type inference. To demonstrate our claims, we have modified GHC, a production-quality Haskell compiler, to support impredicativity. The changes required are modest, localised, and are fully compatible with GHC's myriad other type system extensions.},
+  address    = {New York, NY, USA},
+  articleno  = {89},
+  doi        = {10.1145/3408971},
+  issue_date = {August 2020},
+  keywords   = {impredicative polymorphism, constraint-based inference, Type systems},
+  numpages   = {29},
+  publisher  = {Association for Computing Machinery},
+  url        = {https://doi.org/10.1145/3408971},
+}
+
+@Unpublished{stability,
+  author = {{Anonymous ICFP Author(s)}},
+  note   = {Submitted to ICFP'21.},
+  title  = {Seeking Stability by being Lazy and Shallow: Lazy and shallow instantiation is user friendly},
+  year   = {2021}
+}
+
+@InProceedings{stitch,
+  author    = {Eisenberg, Richard A.},
+  booktitle = {Proceedings of the 13th ACM SIGPLAN International Symposium on Haskell},
+  title     = {Stitch: The Sound Type-Indexed Type Checker (Functional Pearl)},
+  year      = {2020},
+  address   = {New York, NY, USA},
+  pages     = {39–53},
+  publisher = {Association for Computing Machinery},
+  series    = {Haskell 2020},
+  abstract  = {A classic example of the power of generalized algebraic datatypes (GADTs) to verify a delicate implementation is the type-indexed expression AST. This functional pearl refreshes this example, casting it in modern Haskell using many of GHC's bells and whistles. The Stitch interpreter is a full executable interpreter, with a parser, type checker, common-subexpression elimination, and a REPL. Making heavy use of GADTs and type indices, the Stitch implementation is clean Haskell code and serves as an existence proof that Haskell's type system is advanced enough for the use of fancy types in a practical setting. The paper focuses on guiding the reader through these advanced topics, enabling them to adopt the techniques demonstrated here.},
+  doi       = {10.1145/3406088.3409015},
+  isbn      = {9781450380508},
+  keywords  = {Haskell, fancy types, GADTs},
+  location  = {Virtual Event, USA},
+  numpages  = {15},
+  url       = {https://doi.org/10.1145/3406088.3409015},
+}
+
+@Book{term-rewriting,
+  author    = {Baader, Franz and Nipkow, Tobias},
+  publisher = {Cambridge University Press},
+  title     = {Term Rewriting and All That},
+  year      = {1998},
+}
+
+@Article{type-classes-with-existentials,
+  author    = {L\"aufer, Konstantin},
+  journal   = {Journal of Functional Programming},
+  title     = {Type classes with existential types},
+  year      = {1996},
+  number    = {3},
+  pages     = {485–518},
+  volume    = {6},
+  doi       = {10.1017/S0956796800001817},
+  publisher = {Cambridge University Press},
+}
+
+@InProceedings{jones-qualified-types,
+  author    = {Jones, Mark P.},
+  booktitle = {Proceedings of the 4th European Symposium on Programming},
+  title     = {A Theory of Qualified Types},
+  year      = {1992},
+  address   = {Berlin, Heidelberg},
+  pages     = {287–306},
+  publisher = {Springer-Verlag},
+  series    = {ESOP '92},
+  isbn      = {3540552537},
+  numpages  = {20},
+}
+
+
+@PhdThesis{atze:phd,
+  author =       {Atze Dijkstra},
+  title =        {Stepping through Haskell},
+  school =       {Universiteit Utrecht},
+  year =         2005}
+
+@InProceedings{rossberg:1ml,
+  author    = {Rossberg, Andreas},
+  booktitle = {Proceedings of the 20th ACM SIGPLAN International Conference on Functional Programming},
+  title     = {1ML – Core and Modules United (F-Ing First-Class Modules)},
+  year      = {2015},
+  address   = {New York, NY, USA},
+  pages     = {35–47},
+  publisher = {Association for Computing Machinery},
+  series    = {ICFP 2015},
+  abstract  = {ML is two languages in one: there is the core, with types and expressions, and there are modules, with signatures, structures and functors. Modules form a separate, higher-order functional language on top of the core. There are both practical and technical reasons for this stratification; yet, it creates substantial duplication in syntax and semantics, and it reduces expressiveness. For example, selecting a module cannot be made a dynamic decision. Language extensions allowing modules to be packaged up as first-class values have been proposed and implemented in different variations. However, they remedy expressiveness only to some extent, are syntactically cumbersome, and do not alleviate redundancy. We propose a redesign of ML in which modules are truly first-class values, and core and module layer are unified into one language. In this "1ML", functions, functors, and even type constructors are one and the same construct; likewise, no distinction is made between structures, records, or tuples. Or viewed the other way round, everything is just ("a mode of use of") modules. Yet, 1ML does not require dependent types, and its type structure is expressible in terms of plain System Fω, in a minor variation of our F-ing modules approach. We introduce both an explicitly typed version of 1ML, and an extension with Damas/Milner-style implicit quantification. Type inference for this language is not complete, but, we argue, not substantially worse than for Standard ML. An alternative view is that 1ML is a user-friendly surface syntax for System Fω that allows combining term and type abstraction in a more compositional manner than the bare calculus.},
+  doi       = {10.1145/2784731.2784738},
+  isbn      = {9781450336697},
+  keywords  = {first-class modules, ML modules, type systems, abstract data types, elaboration, System F, existential types},
+  location  = {Vancouver, BC, Canada},
+  numpages  = {13},
+  url       = {https://doi.org/10.1145/2784731.2784738},
+}
+
+@InProceedings{crary:popl17,
+  author    = {Crary, Karl},
+  booktitle = {Proceedings of the 44th ACM SIGPLAN Symposium on Principles of Programming Languages},
+  title     = {Modules, Abstraction, and Parametric Polymorphism},
+  year      = {2017},
+  address   = {New York, NY, USA},
+  pages     = {100–113},
+  publisher = {Association for Computing Machinery},
+  series    = {POPL 2017},
+  abstract  = {Reynolds's Abstraction theorem forms the mathematical foundation for data abstraction. His setting was the polymorphic lambda calculus. Today, many modern languages, such as the ML family, employ rich module systems designed to give more expressive support for data abstraction than the polymorphic lambda calculus, but analogues of the Abstraction theorem for such module systems have lagged far behind.  We give an account of the Abstraction theorem for a modern module calculus supporting generative and applicative functors, higher-order functors, sealing, and translucent signatures. The main issues to be overcome are: (1) the fact that modules combine both types and terms, so they must be treated as both simultaneously, (2) the effect discipline that models the distinction between transparent and opaque modules, and (3) a very rich language of type constructors supporting singleton kinds. We define logical equivalence for modules and show that it coincides with contextual equivalence. This substantiates the folk theorem that modules are good for data abstraction. All our proofs are formalized in Coq.},
+  doi       = {10.1145/3009837.3009892},
+  isbn      = {9781450346603},
+  keywords  = {logical relations, Abstraction, modules, parametricity},
+  location  = {Paris, France},
+  numpages  = {14},
+  url       = {https://doi.org/10.1145/3009837.3009892},
+}
+
+
+
+@InProceedings{nakazawa08,
+author="Nakazawa, Koji
+and Tatsuta, Makoto
+and Kameyama, Yukiyoshi
+and Nakano, Hiroshi",
+editor="Kaminski, Michael
+and Martini, Simone",
+title="Undecidability of Type-Checking in Domain-Free Typed Lambda-Calculi with Existence",
+booktitle="Computer Science Logic",
+year="2008",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="478--492",
+abstract="This paper shows undecidability of type-checking and type-inference problems in domain-free typed lambda-calculi with existential types: a negation and conjunction fragment, and an implicational fragment. These are proved by reducing type-checking and type-inference problems of the domain-free polymorphic typed lambda-calculus to those of the lambda-calculi with existential types by continuation passing style translations.",
+isbn="978-3-540-87531-4"
+}
+
+
+@inproceedings{nakazawa09,
+author = {Nakazawa, Koji and Tatsuta, Makoto},
+title = {Type Checking and Inference for Polymorphic and Existential Types},
+year = {2009},
+isbn = {9781920682750},
+publisher = {Australian Computer Society, Inc.},
+address = {AUS},
+abstract = {This paper proves undecidability of type checking and type inference problems in some variants of typed lambda calculi with polymorphic and existential types. First, type inference in the domain-free polymorphic lambda calculus is proved to be undecidable, and then it is proved that type inference is undecidable in the negation, conjunction, and existence fragment of the domain-free typed lambda calculus. Secondly, their variants with multiple quantifier rules are introduced, and their type checking and type inference are proved to be undecidable. Finally, it is proved that we can reduce undecidability of type checking and type inference problems in the Curry-style lambda calculus in negation, conjunction, and existential fragment to undecidability of those problems in another variant of the domain-free polymorphic lambda calculus.},
+booktitle = {Proceedings of the Fifteenth Australasian Symposium on Computing: The Australasian Theory - Volume 94},
+pages = {63–72},
+numpages = {10},
+keywords = {type checking, polymorphic type, domain-free style, type inference, existential type},
+location = {Wellington, New Zealand},
+series = {CATS '09}
+}
+
+@InProceedings{pfenning-anti-unification,
+  author    = {F. Pfenning},
+  booktitle = {Proceedings 1991 Sixth Annual IEEE Symposium on Logic in Computer Science},
+  title     = {Unification and anti-unification in the calculus of constructions},
+  year      = {1991},
+  address   = {Los Alamitos, CA, USA},
+  month     = {jul},
+  pages     = {74,75,76,77,78,79,80,81,82,83,84,85},
+  publisher = {IEEE Computer Society},
+  doi       = {10.1109/LICS.1991.151632},
+  keywords  = {calculus;computer science;internet;logic programming;computer languages;terminology;artificial intelligence},
+  url       = {https://doi.ieeecomputersociety.org/10.1109/LICS.1991.151632},
+}
+
+@Unpublished{formulae-as-types,
+  author = {Howard, William Alvin},
+  note   = {Dedicated to H. B. Curry on the occasion of his 80th birthday},
+  title  = {The Formulae-as-types Notion of Construction},
+  year   = {1969},
+  url    = {https://www.dcc.fc.up.pt/~acm/howard2.pdf},
+}
+
+@InProceedings{type-variables-in-patterns,
+  author    = {Eisenberg, Richard A. and Breitner, Joachim and Peyton Jones, Simon},
+  booktitle = {Proceedings of the 11th ACM SIGPLAN International Symposium on Haskell},
+  title     = {Type Variables in Patterns},
+  year      = {2018},
+  address   = {New York, NY, USA},
+  pages     = {94–105},
+  publisher = {Association for Computing Machinery},
+  series    = {Haskell 2018},
+  abstract  = {For many years, GHC has implemented an extension to Haskell that allows type variables to be bound in type signatures and patterns, and to scope over terms. This extension was never properly specified. We rectify that oversight here. With the formal specification in hand, the otherwise-labyrinthine path toward a design for binding type variables in patterns becomes blindingly clear. We thus extend ScopedTypeVariables to bind type variables explicitly, obviating the Proxy workaround to the dustbin of history.},
+  doi       = {10.1145/3242744.3242753},
+  isbn      = {9781450358354},
+  keywords  = {type variables, polymorphism, Patterns, Haskell},
+  location  = {St. Louis, MO, USA},
+  numpages  = {12},
+  url       = {https://doi.org/10.1145/3242744.3242753},
+}
+@Manual{augustsson:93,
+  title =     {Haskell B. user's manual. Version 0.999.4},
+  author =    {Lennart Augustsson},
+  year =      1993}
+
+@InCollection{martin-lof,
+  author    = {Martin-L{\"o}f, Per},
+  booktitle = {Studies in Logic and the Foundations of Mathematics},
+  publisher = {Elsevier},
+  title     = {An intuitionistic theory of types: Predicative part},
+  year      = {1975},
+  pages     = {73--118},
+  volume    = {80},
+}
+
+@Manual{haskell-b,
+  title  = {Haskell B. user's manual},
+  author = {Augustsson, Lennart},
+  year   = {1994},
+  url    = {https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.50.5800&rep=rep1&type=pdf},
+}
+
+@InCollection{harper:attapl,
+  author    = {Harper, Robert and Pierce, Benjamin C.},
+  booktitle = {Advanced Topics in Types and Programming Languages},
+  publisher = {The MIT Press},
+  title     = {Design Considerations for ML-Style Module Systems},
+  year      = {2005},
+  editor    = {Pierce, Benjamin C.},
+  pages     = {293--346},
+}
+
+@Misc{weirich-dependent-regexes,
+  author       = {Weirich, Stephanie},
+  howpublished = {Haskell eXchange keynote},
+  title        = {Dependent Types in Haskell},
+  year         = {2018},
+}
+
+@Article{subtypes-for-specifications,
+  author  = {J. {Rushby} and S. {Owre} and N. {Shankar}},
+  journal = {IEEE Transactions on Software Engineering},
+  title   = {Subtypes for specifications: predicate subtyping in PVS},
+  year    = {1998},
+  number  = {9},
+  pages   = {709-720},
+  volume  = {24},
+  doi     = {10.1109/32.713327},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:Markings\;2\;1\;\;\;\;;
+2 StaticGroup:rae:6\;2\;1\;\;\;\;;
+}
